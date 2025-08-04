@@ -24,6 +24,8 @@ export const apiKeyAuth =
     } else {
       token = authKey;
     }
+    console.log("token", token)
+    console.log("apiKey", apiKey)
     if (token !== apiKey) {
       reply.status(401).send("Invalid API key");
       return;
